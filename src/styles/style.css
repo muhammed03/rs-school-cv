@@ -444,6 +444,13 @@ button:hover {
  * at the top left of the screen
  */
 
+.navigation {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    z-index: 5;
+}
+
 #menu {
     position: absolute;
     width: 300px;
