@@ -8,11 +8,16 @@
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
     <title>Rs-school cv</title>
 </head>
 
 <body>
+    <header></header>
     <main>
         <section class="container-wrapper">
             <div class="first-page">
@@ -141,6 +146,78 @@
                         </div>
                     </div>
                 </aside>
+            </div>
+            <div class="second">
+                <h2>My projects and code sample</h2>
+                <div class="projects-list">
+                    <div class="project-item">
+                        <img src="./src/assets/images/1.jpg" alt="">
+                        <div class="project-info">
+                            <h3>English for kids</h3>
+                            <h4>HTML, CSS, Webpack</h4>
+                            <article>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat in ipsam facilis provident numquam aliquid quae ab ad adipisci incidunt, mollitia velit sed quos qui possimus esse repellat exercitationem.
+                                </p>
+                            </article>
+                            <button class="col-1 row-2" onclick="window.location.href='https://muhammed03.github.io/english-for-kids/dist/'">EXPLORE THE PROJECT</button>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="./src/assets/images/2.jpg" alt="">
+                        <div class="project-info">
+                            <h3>GEM PUZZLE</h3>
+                            <h4>HTML, CSS, Webpack</h4>
+                            <article>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat in ipsam facilis provident numquam aliquid quae ab ad adipisci incidunt, mollitia velit sed quos qui possimus esse repellat exercitationem.
+                                </p>
+                            </article>
+                            <button class="col-1 row-2" onclick="window.location.href='https://muhammed03.github.io/gem-puzzle/index.html'">EXPLORE THE PROJECT</button>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="./src/assets/images/3.jpg" alt="">
+                        <div class="project-info">
+                            <h3>Spotify clone</h3>
+                            <h4>HTML, CSS, Webpack, REACT</h4>
+                            <article>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat in ipsam facilis provident numquam aliquid quae ab ad adipisci incidunt, mollitia velit sed quos qui possimus esse repellat exercitationem.
+                                </p>
+                            </article>
+                            <button class="col-1 row-2" onclick="window.location.href='https://spotify-clone-react-rs-school.herokuapp.com/'">EXPLORE THE PROJECT</button>
+                        </div>
+                    </div>
+                </div>
+                <pre>
+                    <code class="language-javascript">
+                        module.exports = function towelSort (matrix) {
+        
+                            let sorted = [];
+                        
+                            if (matrix === undefined) {
+                            return [];
+                            }
+                            for (let i = 0; i < matrix.length; i++) {
+                        
+                            if (i % 2 == 0) {
+                                for (let j = 0; j < matrix[i].length; j++) {
+                                sorted.push(matrix[i][j]);
+                                }
+                            } else {
+                                for (let j = matrix[i].length - 1; j >= 0; j--) {
+                                sorted.push(matrix[i][j]);
+                                }
+                            }
+                            }  
+                            return sorted;
+                        }
+                </code>
+                    </pre>
+            </div>
+            <div class="third">
+
             </div>
         </section>
     </main>
