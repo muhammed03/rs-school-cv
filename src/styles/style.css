@@ -1,0 +1,244 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-wrapper {
+    width: 60%;
+    margin: 10px auto;
+}
+
+.first-page {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.first-block {
+    background: rgba(196, 196, 196, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10px;
+    width: auto;
+}
+
+.first-block-container {}
+
+.avatar {
+    display: flex;
+    color: #CECACA;
+    justify-content: space-around;
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 13rem;
+    margin-right: 20px;
+}
+
+.avatar-info h1 {
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.avatar-info h1 span {
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 42.67px;
+    color: #fff;
+}
+
+.avatar-info h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.contacts {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.contacts li {
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contacts li:last-child {
+    margin-bottom: 0px;
+}
+
+.contacts li img {
+    padding: 0;
+    float: left;
+    width: 2rem;
+    margin-right: 3rem;
+}
+
+.contacts li span {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.contacts li span a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.knowledge-container {
+    color: #fff;
+    font-size: 1.5rem;
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.knowledge-container h3 {
+    margin: 0px;
+    padding: 10px 10px 5px 10px;
+}
+
+.knowledge-container ul {
+    margin: 0;
+}
+
+.social-list {
+    list-style-type: none;
+}
+
+.social-list li span a {
+    color: white;
+    text-decoration: none;
+}
+
+.second-block {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.second-block-item {
+    padding: 10px;
+}
+
+.second-block-header {
+    background-color: #545454;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.second-block-header-res {
+    margin-bottom: 10px;
+}
+
+.second-block-header-res h4 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #343434;
+}
+
+.second-block-header-res h5 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #73808D;
+}
+
+.second-block-header-res p {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.second-block-skills {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    /* margin: 0 auto; */
+}
+
+.skills-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.skills-item-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin-bottom: 10px;
+    border: 5px solid #3B5999;
+}
+
+.skills-item-img img {
+    width: 40px;
+}
+
+.skills-item h4 {
+    color: 545454;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    .container-wrapper {
+        width: 90%;
+    }
+    .first-page {
+        flex-direction: column;
+    }
+    .first-block {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 651px) {
+    .avatar-info h1 {
+        font-size: 2rem;
+    }
+    .avatar-info h1 span {
+        font-size: 2rem;
+    }
+    .contacts li span {
+        font-size: 1rem;
+    }
+    .contacts li img {
+        margin-right: 1rem;
+    }
+    .knowledge-container {
+        color: #fff;
+        font-size: 1.3rem;
+    }
+    .social-list {
+        padding-left: 10px;
+    }
+    .second-block {
+        padding: 10px;
+    }
+    .second-block-skills {
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+    .avatar {
+        flex-direction: column;
+    }
+}
