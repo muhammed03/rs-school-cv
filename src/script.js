@@ -1,3 +1,5 @@
+console.log(140)
+
 function scrollTo(element) {
     window.scroll({
         behavior: 'smooth',
