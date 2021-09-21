@@ -301,12 +301,12 @@ body {
 }
 
 @media (min-width: 550px) {
-    .project-item:nth-child(odd) {
+    .project-item-1{
         transform: translateX(50px);
     }
-    .project-item:nth-child(even) {
+    /* .project-item:nth-child(even) {
         transform: translateX(-50px);
-    }
+    } */
 }
 
 @media (max-width: 480px) {}
@@ -488,4 +488,43 @@ button:hover {
         opacity: 0;
         transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
     }
+}
+
+
+
+.footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #263238;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.icons{
+    padding-top: 1rem;
+}
+
+.icons a{
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: #f4f4f4;
+}
+
+.company-name{
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+}
+
+
+
+
+.rs-img {
+    width: 10%;
+}
+
+a {
+    text-decoration: none;
 }
