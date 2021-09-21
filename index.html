@@ -13,6 +13,8 @@
     <script>
         hljs.highlightAll();
     </script>
+
+<script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
     <title>Rs-school cv</title>
 </head>
 
@@ -20,41 +22,22 @@
     <header>
         <nav class="navigation" role='navigation'>
             <div id="menuToggle">
-                <!--
-          A fake / hidden checkbox is used as click reciever,
-          so you can use the :checked selector on it.
-          -->
                 <input type="checkbox" />
-
-                <!--
-          Some spans to act as a hamburger.
-          
-          They are acting like a real hamburger,
-          not that McDonalds stuff.
-          -->
                 <span></span>
                 <span></span>
                 <span></span>
-
-                <!--
-          Too bad the menu has to be inside of the button
-          but hey, it's pure CSS magic.
-          -->
                 <ul id="menu">
-                    <a href="#">
-                        <li>Home</li>
+                    <a id="main-link">
+                        <li>Main information</li>
                     </a>
-                    <a href="#">
-                        <li>About</li>
+                    <a id="projects-link">
+                        <li>Projects</li>
                     </a>
-                    <a href="#">
-                        <li>Info</li>
+                    <a id="code-link">
+                        <li>Code example</li>
                     </a>
-                    <a href="#">
-                        <li>Contact</li>
-                    </a>
-                    <a href="https://erikterwan.com/" target="_blank">
-                        <li>Show me more</li>
+                    <a id="footer-link">
+                        <li>Footer</li>
                     </a>
                 </ul>
             </div>
@@ -63,7 +46,7 @@
 
     <main>
         <section class="container-wrapper">
-            <div class="first-page">
+            <div class="first-page" id="main">
                 <div class="first-block">
                     <div class="first-block-container">
                         <div class="avatar">
@@ -131,15 +114,15 @@
                             <h3>Experience</h3>
                         </div>
                         <div class="second-block-header-res">
-                            <h4>Blue Moon Consultency Studio</h4>
-                            <h5>Aug 2020 - Present - 1 year, New York</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, sequi possimus eveniet ipsum itaque asperiores quidem earum eos laborum. Id aliquam adipisci corrupti vero suscipit praesentium dicta quaerat blanditiis commodi.</p>
+                            <h4>Internship at the Technodom company</h4>
+                            <h5>Aug 2020 - Present - 2 month, Almaty</h5>
+                            <p>During my internship I worked as a call operator. Working in the technical support department, I have mastered many different skills: the ability to communicate with people, be punctual, the ability to listen to people and etc...</p>
                         </div>
 
                         <div class="second-block-header-res">
-                            <h4>Black Yark product design</h4>
-                            <h5>Seniour UX designer</h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, at sint quisquam dignissimos minus laboriosam voluptatem dolorem iure sed enim quo velit sit, obcaecati sapiente iusto facilis eaque! Expedita, est.</p>
+                            <h4>Volunteer activity in Bolashak events (2019)</h4>
+                            <h5>Assistant translator of foreign representatives</h5>
+                            <p>I was lucky enough to be a part of a big event. Representatives of various universities around the world came to our city. In this project, I worked as a translator</p>
                         </div>
 
                     </div>
@@ -149,15 +132,15 @@
                             <h3>Education</h3>
                         </div>
                         <div class="second-block-header-res">
-                            <h4>Bachelor of Engineering in Information Technology </h4>
-                            <h5>2011-2015, New York</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, sequi possimus eveniet ipsum itaque asperiores quidem earum eos laborum. Id aliquam adipisci corrupti vero suscipit praesentium dicta quaerat blanditiis commodi.</p>
+                            <h4>School programming (KBTU)</h4>
+                            <h5>2016-2017, Almaty</h5>
+                            <p>In 2016, I was selected in a programming competition.  After the results were released, I was offered to become a student of this school. At this school, I learned to program in C+.</p>
                         </div>
 
                         <div class="second-block-header-res">
-                            <h4>NJIT Higher </h4>
-                            <h5>2009-2011, New York </h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, at sint quisquam dignissimos minus laboriosam voluptatem dolorem iure sed enim quo velit sit, obcaecati sapiente iusto facilis eaque! Expedita, est.</p>
+                            <h4>Graduate of the school "Rs-school"  </h4>
+                            <h5>2020-2021, Almaty </h5>
+                            <p>After graduating from high school, I began to get involved in web development. Fortunately, I learned about the course "RS-school".  In this course, I learned how to create websites and use various libraries.</p>
                         </div>
 
                     </div>
@@ -192,48 +175,57 @@
             </div>
             <div class="second">
                 <h2>My projects and code sample</h2>
-                <div class="projects-list">
-                    <div class="project-item">
+                <div class="projects-list" id="projects">
+
+                <a class="project-item-link" href="https://muhammed03.github.io/english-for-kids/dist/">
+                    <div class="project-item project-item-1">
+
                         <img src="./src/assets/images/1.jpg" alt="">
                         <div class="project-info">
                             <h3>English for kids</h3>
                             <h4>HTML, CSS, Webpack</h4>
                             <article>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat in ipsam facilis provident numquam aliquid quae ab ad adipisci incidunt, mollitia velit sed quos qui possimus esse repellat exercitationem.
+                                    This project is intended for children as well as for older people. The goal of this project is to create a game for learning English words. There are 8 categories in this game.
                                 </p>
                             </article>
                             <button class="col-1 row-2" onclick="window.location.href='https://muhammed03.github.io/english-for-kids/dist/'">EXPLORE THE PROJECT</button>
+                        
                         </div>
                     </div>
-                    <div class="project-item">
+                </a>
+                <a class="project-item-link" href="https://muhammed03.github.io/gem-puzzle/index.html">
+                    <div class="project-item project-item-2">
                         <img src="./src/assets/images/2.jpg" alt="">
                         <div class="project-info">
                             <h3>GEM PUZZLE</h3>
                             <h4>HTML, CSS, Webpack</h4>
                             <article>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat in ipsam facilis provident numquam aliquid quae ab ad adipisci incidunt, mollitia velit sed quos qui possimus esse repellat exercitationem.
+                                <p>It is a set of identical square knuckles with numbers applied, enclosed in a square box. The length of the side of the box is four times the length of the side of the knuckles for a set of 15 elements, respectively, one square field remains empty in the box. The goal of the game is to move the knuckles around the box, to arrange them by numbers, preferably by making as few movements as possible.
                                 </p>
                             </article>
                             <button class="col-1 row-2" onclick="window.location.href='https://muhammed03.github.io/gem-puzzle/index.html'">EXPLORE THE PROJECT</button>
                         </div>
                     </div>
-                    <div class="project-item">
+                </a>
+                <a class="project-item-link" href="https://spotify-clone-react-rs-school.herokuapp.com/">
+                    <div class="project-item project-item-1">
                         <img src="./src/assets/images/3.jpg" alt="">
                         <div class="project-info">
                             <h3>Spotify clone</h3>
                             <h4>HTML, CSS, Webpack, REACT</h4>
                             <article>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat in ipsam facilis provident numquam aliquid quae ab ad adipisci incidunt, mollitia velit sed quos qui possimus esse repellat exercitationem.
+                                    A clone of this application is a solution to some problems. The site was developed in the “Single-page-application " format. After authentication, you will immediately get to the “Home " section, which will provide you with various albums by genre. This list of albums is updated every day. There is also a section "Your-library", thanks to this section you can find music tracks that you have listened to recently. And the site will also display your personal albums.
                                 </p>
                             </article>
                             <button class="col-1 row-2" onclick="window.location.href='https://spotify-clone-react-rs-school.herokuapp.com/'">EXPLORE THE PROJECT</button>
                         </div>
                     </div>
                 </div>
-                <pre>
+            </a>
+                <div id="codes">
+                <pre >
                     <code class="language-javascript">
                         module.exports = function towelSort (matrix) {
         
@@ -258,12 +250,26 @@
                         }
                 </code>
                     </pre>
+                </div>
             </div>
             <div class="third">
 
             </div>
         </section>
     </main>
+
+    <footer class="footer" id="footer">
+        <div class="icons">
+           <a href="https://github.com/muhammed03/rsschool-cv/pull/1"><i class="fab fa-github"></i></a>
+           <a href="https://www.linkedin.com/in/muhammed-abdrahman-185277175/" target="_blank"><i class="fab fa-linkedin"></i></a>
+           <a href="https://rs.school/js/" target="_blank"><img src="https://rs.school/images/rs_school_js.svg" alt="RS-school" class="rs-img"></a>
+            <p class="company-name">
+                 &copy; 2021, ALL Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <script src="./src/script.js"></script>
 </body>
 
 </html>
